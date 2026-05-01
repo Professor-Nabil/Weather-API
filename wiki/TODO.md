@@ -20,12 +20,12 @@ Set up the base server and establish the project structure.
 Connect the server to the external weather data provider.
 **Fetch Live Weather Data**
 
-- [ ] Install an HTTP client (e.g., `axios`, `node-fetch`, or native fetch).
-- [ ] Create a dedicated weather service module to handle external API requests.
-- [ ] Implement query parameter validation (ensure `?city=` or `?location=` is provided).
-- [ ] Dynamically call the Visual Crossing API (or chosen provider) using the city query.
-- [ ] Sanitize the 3rd-party API response to return only necessary data (e.g., temperature, conditions, humidity, wind speed).
-- [ ] Add error handling for invalid cities or API provider downtime.
+- [x] Install an HTTP client (e.g., `axios`, `node-fetch`, or native fetch).
+- [x] Create a dedicated weather service module to handle external API requests.
+- [x] Implement query parameter validation (ensure `?city=` or `?location=` is provided).
+- [x] Dynamically call the Visual Crossing API (or chosen provider) using the city query.
+- [x] Sanitize the 3rd-party API response to return only necessary data (e.g., temperature, conditions, humidity, wind speed).
+- [x] Add error handling for invalid cities or API provider downtime.
 
 ---
 
