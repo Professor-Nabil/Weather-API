@@ -62,7 +62,7 @@ Secure the API against abuse.
 Prepare the application for real-world deployment.
 **Final Polish**
 
-- [ ] Update `.env.example` to ensure it contains all keys used in the project.
-- [ ] Clean up any temporary debugging `console.log` statements.
-- [ ] Add comprehensive error middleware to catch unexpected crashes.
-- [ ] Create a comprehensive `README.md` with API usage instructions, setup steps, and sample curl requests.
+- [x] Update `.env.example` to ensure it contains all keys used in the project.
+- [x] Clean up any temporary debugging `console.log` statements.
+- [x] Add comprehensive error middleware to catch unexpected crashes.
+- [x] Create a comprehensive `README.md` with API usage instructions, setup steps, and sample curl requests.

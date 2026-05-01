@@ -2,6 +2,7 @@ import express from "express";
 import "dotenv/config";
 import weatherRoutes from "./routes/weatherRoutes.js";
 import { apiRateLimiter } from "./middleware/rateLimiter.js";
+import { globalErrorHandler } from "./middleware/errorHandler.js";
 
 const app = express();
 
@@ -20,5 +21,8 @@ app.use((req, res) => {
     message: `Cannot ${req.method} ${req.originalUrl}`,
   });
 });
+
+// --- Global Error Handler ---
+app.use(globalErrorHandler);
 
 export default app;
