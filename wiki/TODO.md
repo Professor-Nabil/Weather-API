@@ -34,13 +34,13 @@ Connect the server to the external weather data provider.
 Speed up your API and avoid hitting external rate limits by saving responses in Redis.
 **Implement Redis Cache**
 
-- [ ] Set up local Redis or connect to a cloud Redis instance.
-- [ ] Install the Redis client package (e.g., `redis` for Node.js).
-- [ ] Connect to Redis on server startup and log connection success/error.
-- [ ] Update the weather controller to check Redis _before_ calling the external API.
-- [ ] If data exists in Redis (Cache Hit), parse it and return it immediately to the client.
-- [ ] If data is missing (Cache Miss), fetch it from the API and save the result to Redis using a key like `weather:<city_name>`.
-- [ ] Set a 12-hour (43,200 seconds) expiration (`EX`) on all cached Redis keys.
+- [x] Set up local Redis or connect to a cloud Redis instance.
+- [x] Install the Redis client package (e.g., `redis` for Node.js).
+- [x] Connect to Redis on server startup and log connection success/error.
+- [x] Update the weather controller to check Redis _before_ calling the external API.
+- [x] If data exists in Redis (Cache Hit), parse it and return it immediately to the client.
+- [x] If data is missing (Cache Miss), fetch it from the API and save the result to Redis using a key like `weather:<city_name>`.
+- [x] Set a 12-hour (43,200 seconds) expiration (`EX`) on all cached Redis keys.
 
 ---
 
