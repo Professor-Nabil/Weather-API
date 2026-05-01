@@ -7,11 +7,11 @@
 Set up the base server and establish the project structure.
 **Base Server & Environment Setup**
 
-- [ ] Initialize the project (`npm init -y` or language equivalent).
-- [ ] Install base dependencies (Express/Fastify, TypeScript/Python, `dotenv`).
-- [ ] Create `.env.example` with placeholders for `PORT`, `WEATHER_API_KEY`, and `REDIS_URL`.
-- [ ] Implement a test route `GET /api/weather` that returns a hardcoded mock weather response.
-- [ ] Handle 404 routes for non-existent endpoints.
+- [x] Initialize the project (`npm init -y` or language equivalent).
+- [x] Install base dependencies (Express/Fastify, TypeScript/Python, `dotenv`).
+- [x] Create `.env.example` with placeholders for `PORT`, `WEATHER_API_KEY`, and `REDIS_URL`.
+- [x] Implement a test route `GET /api/weather` that returns a hardcoded mock weather response.
+- [x] Handle 404 routes for non-existent endpoints.
 
 ---
 
