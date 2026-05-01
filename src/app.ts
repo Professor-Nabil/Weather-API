@@ -1,10 +1,14 @@
 import express from "express";
 import "dotenv/config";
 import weatherRoutes from "./routes/weatherRoutes.js";
+import { apiRateLimiter } from "./middleware/rateLimiter.js";
 
 const app = express();
 
 app.use(express.json());
+
+// Apply rate limiting to all /api routes
+app.use("/api", apiRateLimiter);
 
 // Mount the weather routes
 app.use("/api", weatherRoutes);

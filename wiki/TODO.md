@@ -49,11 +49,11 @@ Speed up your API and avoid hitting external rate limits by saving responses in 
 Secure the API against abuse.
 **Add Rate Limiting & Security**
 
-- [ ] Install rate-limiting middleware (e.g., `express-rate-limit`).
-- [ ] Define rate limits (e.g., max 60 requests per hour per IP).
-- [ ] Return a standard `429 Too Many Requests` status code when the limit is exceeded.
-- [ ] Ensure the rate-limiter returns clear, informative headers (`X-RateLimit-Limit`, `X-RateLimit-Remaining`).
-- [ ] Test the rate limiter manually or via tests to confirm it blocks excessive traffic.
+- [x] Install rate-limiting middleware (e.g., `express-rate-limit`).
+- [x] Define rate limits (e.g., max 60 requests per hour per IP).
+- [x] Return a standard `429 Too Many Requests` status code when the limit is exceeded.
+- [x] Ensure the rate-limiter returns clear, informative headers (`X-RateLimit-Limit`, `X-RateLimit-Remaining`).
+- [x] Test the rate limiter manually or via tests to confirm it blocks excessive traffic.
 
 ---
 
